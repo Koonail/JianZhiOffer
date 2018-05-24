@@ -1,6 +1,6 @@
 package com.koonail.utils;
 
-public class TestCases {
+public class CommonUtils {
     /**
      * 创建一个二维数组
      * @param x
@@ -20,4 +20,13 @@ public class TestCases {
         return rs;
     }
 
+    /**
+     * 判断是否为数字
+     * @param str
+     * @return
+     */
+    public static boolean isNumber(String str){
+        String reg = "^[0-9]+(.[0-9]+)?$";
+        return str.matches(reg);
+    }
 }
